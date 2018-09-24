@@ -69,7 +69,11 @@ public class Main {
         System.out.println("Population: " + population);
         System.out.println("Volume of Stored Water in Gallons: " + totalVolume);
         System.out.println("Total Theoretical Water Usage: " + totalCityWaterUsageT);
-        System.out.println("Each person must save " + difference + " gallons.");
+        System.out.println("Each person must save " + difference + " gallons of water, which means he/she must" +
+                " use no more than " + (65 - difference) + " gallons per day.");
+        System.out.println("Each person must save " + (difference*0.00378541) + " cubic meters of water, " +
+                "which means he/she must use no more than " + (.246 - (difference*0.00378541)) +
+                " cubic meters per day.");
 
     }
 }
